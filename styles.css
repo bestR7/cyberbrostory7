@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  font-family: Segoe UI;
+  font-size: 14pt;
+  color: white;
+}
+
+header {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  height: 20%;
+  background-color: black;
+  opacity: 0.91;
+}
+
+body {
+  background-color: black;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 90px 1fr 1fr;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 50%;
+}
+
+.caption {
+  margin-left: 5%;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 1%;
+  font-weight: bold;
+  margin-left: 5%;
+  font-size: 87%;
+}
+
+.menu li:hover {
+    background-color: #dc3545;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #dc3545;
+    text-underline-offset: 15px;
+}
+
+.current {
+  background-color: #dc3545;
+  opacity: 0.7;
+  color: #131313;
+  text-decoration: underline;
+  text-decoration-color: #dc3545;
+  text-underline-offset: 15px;
+}
+
+.caption {
+  font-size: 14pt;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;}
+  .caption .glitch {
+    color: #fff;
+    font-family: Segoe UI;
+    font-size: 14pt;
+    position: relative;
+  }
+    .caption .glitch:before, .caption .glitch:after {
+      content: 'КИБЕРСТАЛКЕР ПОД ПРИКРЫТИЕМ';
+      color: #fff;
+      position: absolute;
+      top: 0;
+      overflow: hidden;
+      }
+    .caption .glitch:before {
+      left: -7px;
+      padding-left: 5px;
+      text-shadow: -3px 0 red;
+      animation: glitch-before 2s linear 0.7s infinite alternate; }
+    .caption .glitch:after {
+      left: 7px;
+      padding-right: 5px;
+      text-shadow: -3px 0 blue;
+      animation: glitch-after 2s linear 0.7s infinite alternate; }
+
+@keyframes glitch-before {
+  0% {
+    clip: rect(121px, 350px, 73px, 30px); }
+  5% {
+    clip: rect(47px, 350px, 53px, 30px); }
+  10% {
+    clip: rect(112px, 350px, 147px, 30px); }
+  15% {
+    clip: rect(74px, 350px, 75px, 30px); }
+  20% {
+    clip: rect(24px, 350px, 145px, 30px); }
+  25% {
+    clip: rect(68px, 350px, 102px, 30px); }
+  30% {
+    clip: rect(79px, 350px, 112px, 30px); }
+  35% {
+    clip: rect(12px, 350px, 34px, 30px); }
+  40% {
+    clip: rect(69px, 350px, 145px, 30px); }
+  45% {
+    clip: rect(33px, 350px, 96px, 30px); }
+  50% {
+    clip: rect(99px, 350px, 76px, 30px); }
+  55% {
+    clip: rect(74px, 350px, 1px, 30px); }
+  60% {
+    clip: rect(99px, 350px, 136px, 30px); }
+  65% {
+    clip: rect(140px, 350px, 137px, 30px); }
+  70% {
+    clip: rect(116px, 350px, 32px, 30px); }
+  75% {
+    clip: rect(90px, 350px, 7px, 30px); }
+  80% {
+    clip: rect(55px, 350px, 138px, 30px); }
+  85% {
+    clip: rect(71px, 350px, 38px, 30px); }
+  90% {
+    clip: rect(12px, 350px, 28px, 30px); }
+  95% {
+    clip: rect(131px, 350px, 141px, 30px); }
+  100% {
+    clip: rect(91px, 350px, 113px, 30px); } }
+
+@keyframes glitch-after {
+  0% {
+    clip: rect(96px, 350px, 96px, 30px); }
+  5% {
+    clip: rect(96px, 350px, 131px, 30px); }
+  10% {
+    clip: rect(38px, 350px, 4px, 30px); }
+  15% {
+    clip: rect(112px, 350px, 110px, 30px); }
+  20% {
+    clip: rect(94px, 350px, 127px, 30px); }
+  25% {
+    clip: rect(129px, 350px, 89px, 30px); }
+  30% {
+    clip: rect(19px, 350px, 28px, 30px); }
+  35% {
+    clip: rect(32px, 350px, 14px, 30px); }
+  40% {
+    clip: rect(121px, 350px, 135px, 30px); }
+  45% {
+    clip: rect(77px, 350px, 137px, 30px); }
+  50% {
+    clip: rect(20px, 350px, 37px, 30px); }
+  55% {
+    clip: rect(106px, 350px, 19px, 30px); }
+  60% {
+    clip: rect(117px, 350px, 45px, 30px); }
+  65% {
+    clip: rect(25px, 350px, 138px, 30px); }
+  70% {
+    clip: rect(22px, 350px, 49px, 30px); }
+  75% {
+    clip: rect(137px, 350px, 68px, 30px); }
+  80% {
+    clip: rect(43px, 350px, 27px, 30px); }
+  85% {
+    clip: rect(6px, 350px, 66px, 30px); }
+  90% {
+    clip: rect(108px, 350px, 30px, 30px); }
+  95% {
+    clip: rect(37px, 350px, 142px, 30px); }
+  100% {
+    clip: rect(55px, 350px, 11px, 30px); } }
+
+.subtitle {
+  font-size: 87%;
+  color: #dc3545;
+  letter-spacing: 3px;
+}
+
+.module {
+  margin: 3%;
+  padding: 1%;
+  width: 25%;
+  border: 1px solid grey;
+}
+
+.content {
+  display: inline-block;
+}
+
+.alert {
+  text-align: center;
+  font-size: 200%;
+}
